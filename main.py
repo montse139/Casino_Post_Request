@@ -39,10 +39,10 @@ class MainHandler(BaseHandler):
             self.write(" Number of attempts: %s" % len(your_guesses))
         elif x < secret:
             self.write("go up! Number of attempts: %s" % len(your_guesses))
-            return self.render_template("hello.html")
+            self.render_template("hello.html")
         elif x > secret:
             self.write("go down! Number of attempts: %s" % len(your_guesses))
-            return self.render_template("hello.html")
+            self.render_template("hello.html")
 
 
 
@@ -50,3 +50,5 @@ app = webapp2.WSGIApplication([
     webapp2.Route('/', MainHandler),
 ], debug=True)# Calculator_Post_Request
 # Casino_post_request
+# Casino_post_request
+# Casino_Post_Request
